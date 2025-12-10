@@ -1,0 +1,67 @@
+<doctype! html>
+<html>
+    <head>
+        <title> Grid property</title>
+
+        <style>
+            body{
+                margin:0;
+                font-family:cursive;
+            }
+            .Container{
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr;
+                grid-template-rows: 80px 1fr 80px;
+                gap:10px;
+                grid-template-areas:
+                "Header Header Header"
+                "Left Main Right"
+                "Footer Footer Footer";
+                height: 100vh;
+                justify-content: center;
+                text-align: center;
+            }
+            .Header{
+                grid-area: Header;
+                background-color: rgb(141, 129, 129);
+                padding: 15px;
+            }
+            .Left{
+                grid-area: Left;
+                background-color: rgb(141, 129, 129);
+                padding: 15px;
+            }
+            .Main{
+                grid-area: Main;
+                background-color: rgb(141, 129, 129);
+                padding: 15px;
+            }
+            .Right{
+                grid-area: Right;
+                background-color: rgb(141, 129, 129);
+                padding: 15px;
+            }
+            .Footer{
+                grid-area: Footer;
+                background-color: rgb(141, 129, 129);
+                padding: 15px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="Container">
+            <div class="Header">Header</div>
+            <div class="Left"> Left </div>
+            <div class="Main"> Main</div>
+            <div class="Footer"> Footer </div>
+            <div class="Right">Right </div>
+        </div>
+
+    </body>
+
+
+    </html>
